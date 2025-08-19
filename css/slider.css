@@ -1,0 +1,138 @@
+.slider-section {
+  width: 100%;
+  position: relative;
+
+  z-index: 3000;
+}
+
+.carousel {
+  /* margin-bottom: 40px; */
+  z-index: 900;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 55rem;
+  aspect-ratio: 16/9;
+}
+
+.carousel-item img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: -0.8rem;
+  -webkit-border-radius: -0.8rem;
+  -moz-border-radius: -0.8rem;
+  -ms-border-radius: -0.8rem;
+  -o-border-radius: -0.8rem;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--selection-bg-color);
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: var(--selection-bg-color);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent !important;
+
+  /* z-index: 2001; */
+}
+
+@media (width <= 320px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+
+.carousel-control-prev {
+  position: absolute;
+  left: -1rem !important;
+}
+
+.carousel-control-next {
+  position: absolute;
+  right: -1rem !important;
+}
+
+.carousel-indicators button {
+  background-color: #fff !important;
+  width: 1rem !important;
+  height: 1rem !important;
+  border: 0.1rem solid transparent !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+  margin-right: 1.2rem !important;
+
+  opacity: 1 !important;
+}
+
+.carousel-indicators .active {
+  border: 0.1rem solid #fff !important;
+  background-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 26rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .carousel-item {
+    height: 12rem;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0)
+    contrast(100%);
+  /* This makes the arrow white; adjust `invert()` and `brightness()` to get different colors */
+
+  font-size: 3.2rem !important;
+}
+
+.carousel-control-prev-icon {
+  filter: invert(31%) sepia(96%) saturate(6589%) hue-rotate(8deg)
+    brightness(94%) contrast(101%);
+  /* Adjust this filter to get your preferred color for the 'prev' icon (e.g., red) */
+}
+
+.carousel-control-next-icon {
+  filter: invert(55%) sepia(18%) saturate(5707%) hue-rotate(190deg)
+    brightness(86%) contrast(92%);
+  /* Adjust this filter to get your preferred color for the 'next' icon (e.g., blue) */
+}
